@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react';
 const Products = (props) => {
     const[counter,setcounter]=React.useState(7);
@@ -7,7 +8,7 @@ const Products = (props) => {
     return ( 
         //  <div>
         //    {name}
-        //  <br></br>
+        //  <br><
         //  {degree}
         //  <br></br>
         //  {age}
@@ -15,8 +16,9 @@ const Products = (props) => {
         
         //  </div>
         <div>
-            <h1>{counter}</h1>
-<button onClick={()=>{setcounter(21)}}>Eman</button>
+              <h1>{counter}</h1>
+              
+              <Button  variant="contained" onClick={()=>{}}>+</Button>
         </div>
      );
 }
